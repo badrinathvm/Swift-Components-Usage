@@ -58,10 +58,10 @@
 		05F722481F51DFC200FF1F8A /* SwiftComponents */ = {
 			isa = PBXGroup;
 			children = (
+				05F722611F51E26900FF1F8A /* Storyboard */,
 				05F7225E1F51E12000FF1F8A /* Model */,
 				05F722491F51DFC200FF1F8A /* AppDelegate.swift */,
 				05F7224B1F51DFC200FF1F8A /* ViewController.swift */,
-				05F7224D1F51DFC200FF1F8A /* Main.storyboard */,
 				05F722531F51DFC200FF1F8A /* Assets.xcassets */,
 				05F722551F51DFC200FF1F8A /* LaunchScreen.storyboard */,
 				05F722581F51DFC200FF1F8A /* Info.plist */,
@@ -76,6 +76,14 @@
 				05F7225F1F51E14200FF1F8A /* NetworkService.swift */,
 			);
 			name = Model;
+			sourceTree = "<group>";
+		};
+		05F722611F51E26900FF1F8A /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				05F7224D1F51DFC200FF1F8A /* Main.storyboard */,
+			);
+			name = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,6 +326,7 @@
 				05F7225D1F51DFC200FF1F8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
