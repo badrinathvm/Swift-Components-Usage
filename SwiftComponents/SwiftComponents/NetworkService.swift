@@ -47,7 +47,9 @@ class NetworkService {
         dataTask.resume()
     }
     
-    func makeAuthCall(method: HTTPMethod){
+    func makeAuthCall(method: HTTPMethod) -> Token?{
+        
+        var tokenObject:Token?
         
         let body:Parameters = [
             "client_id": "ZNbFDXmZFggx4aLO7RPObQ",
@@ -63,8 +65,6 @@ class NetworkService {
         
         Alamofire.request(self.url, method: method, parameters: body, encoding: URLEncoding(), headers: headers).responseJSON { response in
             
-              // print(response.result.value!)
-            
             //to get status code
             if let status = response.response?.statusCode {
                 switch(status){
@@ -75,9 +75,10 @@ class NetworkService {
                     if let result = response.result.value {
                         let JSON = result as! NSDictionary
                         print(JSON["access_token"]!)
+
+                        //let tokenObject = Token(token: JSON["access_token"] as! String,tokenType:JSON["token_type"] as! String)
                         
-                        let tokenObject = Token(token: JSON["access_token"] as! String)
-                        
+                        tokenObject = Token(tokenContent: JSON)
                     }
                     
                 default:
@@ -86,6 +87,8 @@ class NetworkService {
             }
             
         }
+        
+        return tokenObject
     }
     
     
