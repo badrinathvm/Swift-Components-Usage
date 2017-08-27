@@ -16,7 +16,7 @@ class SearchTableViewController: UITableViewController {
      }
     
     override func viewWillAppear(_ animated: Bool) {
-        let networkService = NetworkService(url: URL(string: "https://api.yelp.com/oauth2/token")!)
+        let networkService = NetworkService(url: EndPoints.AUTH_CALL!)
         networkService.makeAuthCall(method: .post)
     }
 

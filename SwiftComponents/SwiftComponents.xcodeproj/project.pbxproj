@@ -15,6 +15,7 @@
 		05F722601F51E14200FF1F8A /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F7225F1F51E14200FF1F8A /* NetworkService.swift */; };
 		05F722651F53611800FF1F8A /* SearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F722641F53611800FF1F8A /* SearchTableViewController.swift */; };
 		05F722681F536C0B00FF1F8A /* Token.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F722671F536C0B00FF1F8A /* Token.swift */; };
+		05F7226A1F5370AE00FF1F8A /* EndPoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F722691F5370AE00FF1F8A /* EndPoints.swift */; };
 		C476A41DBB7C018EC42D69C4 /* Pods_SwiftComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF3DF8823504BF1DFBA48CF5 /* Pods_SwiftComponents.framework */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 		05F7225F1F51E14200FF1F8A /* NetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		05F722641F53611800FF1F8A /* SearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchTableViewController.swift; sourceTree = "<group>"; };
 		05F722671F536C0B00FF1F8A /* Token.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Token.swift; sourceTree = "<group>"; };
+		05F722691F5370AE00FF1F8A /* EndPoints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndPoints.swift; sourceTree = "<group>"; };
 		E802EEE2746BAA75119956CD /* Pods-SwiftComponents.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftComponents.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SwiftComponents/Pods-SwiftComponents.debug.xcconfig"; sourceTree = "<group>"; };
 		EF3DF8823504BF1DFBA48CF5 /* Pods_SwiftComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -84,6 +86,7 @@
 			children = (
 				05F7225F1F51E14200FF1F8A /* NetworkService.swift */,
 				05F722671F536C0B00FF1F8A /* Token.swift */,
+				05F722691F5370AE00FF1F8A /* EndPoints.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				05F722681F536C0B00FF1F8A /* Token.swift in Sources */,
 				05F722601F51E14200FF1F8A /* NetworkService.swift in Sources */,
 				05F7224A1F51DFC200FF1F8A /* AppDelegate.swift in Sources */,
+				05F7226A1F5370AE00FF1F8A /* EndPoints.swift in Sources */,
 				05F722651F53611800FF1F8A /* SearchTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

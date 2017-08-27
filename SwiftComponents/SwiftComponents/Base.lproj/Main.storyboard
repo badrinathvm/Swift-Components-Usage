@@ -27,7 +27,7 @@
             </objects>
             <point key="canvasLocation" x="-864" y="369"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Search-->
         <scene sceneID="816-6m-1hE">
             <objects>
                 <tableViewController storyboardIdentifier="SearchTableViewController" id="QX5-3u-a8r" customClass="SearchTableViewController" customModule="SwiftComponents" customModuleProvider="target" sceneMemberID="viewController">
@@ -50,7 +50,7 @@
                             <outlet property="delegate" destination="QX5-3u-a8r" id="p9h-Qc-jUl"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Mex-30-Bdo"/>
+                    <navigationItem key="navigationItem" title="Search" id="Mex-30-Bdo"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fMP-R8-BWQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
