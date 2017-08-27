@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import Alamofire
 
 class NetworkService {
     
@@ -18,6 +19,7 @@ class NetworkService {
     init(url: URL) {
         self.url = url
     }
+    
     
     typealias ImageDataHandler = ((Data) -> Void)
     
@@ -44,6 +46,49 @@ class NetworkService {
         
         dataTask.resume()
     }
+    
+    func makeAuthCall(method: HTTPMethod){
+        
+        let body:Parameters = [
+            "client_id": "ZNbFDXmZFggx4aLO7RPObQ",
+            "client_secret" : "t6IB1HvSsZ3VfbVWCjETbhsQKtgjkxEuTo0zK5ZogwmAXjeMamtipUTQwDkb38hk",
+            "grant_type": "client_credentials",
+            "content-type":"application/x-www-form-urlencoded"
+        ]
+        
+        let headers:HTTPHeaders = [
+           "content-type":"application/x-www-form-urlencoded"
+        ]
+
+        
+        Alamofire.request(self.url, method: method, parameters: body, encoding: URLEncoding(), headers: headers).responseJSON { response in
+            
+              // print(response.result.value!)
+            
+            //to get status code
+            if let status = response.response?.statusCode {
+                switch(status){
+                case 200:
+                    
+                    print("Success Status")
+                    
+                    if let result = response.result.value {
+                        let JSON = result as! NSDictionary
+                        print(JSON["access_token"]!)
+                        
+                        let tokenObject = Token(token: JSON["access_token"] as! String)
+                        
+                    }
+                    
+                default:
+                    print("error with response status: \(status)")
+                }
+            }
+            
+        }
+    }
+    
+    
 }
 
 extension NetworkService

@@ -30,7 +30,7 @@
         <!--Root View Controller-->
         <scene sceneID="816-6m-1hE">
             <objects>
-                <tableViewController id="QX5-3u-a8r" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="SearchTableViewController" id="QX5-3u-a8r" customClass="SearchTableViewController" customModule="SwiftComponents" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="O1H-GN-Iao">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -60,7 +60,7 @@
         <scene sceneID="qQn-yh-8rC">
             <objects>
                 <navigationController title="NavigationController" id="7iq-aI-edy" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Near by" image="nearby" id="GMF-WA-8Ul"/>
+                    <tabBarItem key="tabBarItem" title="Search" image="search-filled" id="GMF-WA-8Ul"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="wYp-KE-Z2g">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -92,11 +92,11 @@
             </objects>
             <point key="canvasLocation" x="937" y="769"/>
         </scene>
-        <!--Search-->
+        <!--Near by-->
         <scene sceneID="fwq-iu-Y3j">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Oyn-yq-gPd" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Search" image="search-filled" id="Yek-ql-Sby"/>
+                    <tabBarItem key="tabBarItem" title="Near by" image="nearby" id="Yek-ql-Sby"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="pY3-X7-Rrx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
